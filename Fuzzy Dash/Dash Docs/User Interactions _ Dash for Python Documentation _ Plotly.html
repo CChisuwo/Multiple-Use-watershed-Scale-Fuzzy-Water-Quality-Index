@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://dash.plotly.com/cytoscape/events -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="__________cytoscape_stylesheet">.__________cytoscape_container { position: relative; }</style><style type="text/css">input:invalid {
+    outline: solid red;
+}
+
+input:valid {
+    outline: none black;
+}</style><style type="text/css">.Select,.Select-control{position:relative}.Select-control,.Select-input>input{width:100%;cursor:default;outline:0}.Select-arrow-zone,.Select-clear-zone,.Select-loading-zone{text-align:center;cursor:pointer}.Select,.Select div,.Select input,.Select span{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.Select.is-disabled>.Select-control{background-color:#f9f9f9}.Select.is-disabled>.Select-control:hover{box-shadow:none}.Select.is-disabled .Select-arrow-zone{cursor:default;pointer-events:none;opacity:.35}.Select-control{background-color:#fff;border-radius:4px;border:1px solid #ccc;color:#333;display:table;border-spacing:0;border-collapse:separate;height:36px;overflow:hidden}.is-searchable.is-focused:not(.is-open)>.Select-control,.is-searchable.is-open>.Select-control{cursor:text}.Select-control:hover{box-shadow:0 1px 0 rgba(0,0,0,.06)}.Select-control .Select-input:focus{outline:0}.is-open>.Select-control{border-bottom-right-radius:0;border-bottom-left-radius:0;background:#fff;border-color:#b3b3b3 #ccc #d9d9d9}.is-open>.Select-control .Select-arrow{top:-2px;border-color:transparent transparent #999;border-width:0 5px 5px}.is-focused:not(.is-open)>.Select-control{border-color:#007eff;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 0 3px rgba(0,126,255,.1)}.Select--single>.Select-control .Select-value,.Select-placeholder{bottom:0;color:#aaa;left:0;line-height:34px;padding-left:10px;padding-right:10px;position:absolute;right:0;top:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.has-value.Select--single>.Select-control .Select-value .Select-value-label,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label{color:#333}.has-value.Select--single>.Select-control .Select-value a.Select-value-label,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label{cursor:pointer;text-decoration:none}.has-value.Select--single>.Select-control .Select-value a.Select-value-label:focus,.has-value.Select--single>.Select-control .Select-value a.Select-value-label:hover,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label:focus,.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value a.Select-value-label:hover{color:#007eff;outline:0;text-decoration:underline}.Select-input{height:34px;padding-left:10px;padding-right:10px;vertical-align:middle}.Select-input>input{background:none;border:0;box-shadow:none;display:inline-block;font-family:inherit;font-size:inherit;margin:0;line-height:14px;padding:8px 0 12px;-webkit-appearance:none}.Select-loading,.Select-loading-zone{width:16px;position:relative;vertical-align:middle}.is-focused .Select-input>input{cursor:text}.has-value.is-pseudo-focused .Select-input{opacity:0}.Select-control:not(.is-searchable)>.Select-input{outline:0}.Select-loading-zone{display:table-cell}.Select-loading{-webkit-animation:Select-animation-spin .4s infinite linear;-o-animation:Select-animation-spin .4s infinite linear;animation:Select-animation-spin .4s infinite linear;height:16px;box-sizing:border-box;border-radius:50%;border:2px solid #ccc;border-right-color:#333;display:inline-block}.Select-clear-zone{-webkit-animation:Select-animation-fadeIn .2s;-o-animation:Select-animation-fadeIn .2s;animation:Select-animation-fadeIn .2s;color:#999;display:table-cell;position:relative;vertical-align:middle;width:17px}.Select-clear-zone:hover{color:#D0021B}.Select-clear{display:inline-block;font-size:18px;line-height:1}.Select--multi .Select-clear-zone{width:17px}.Select-arrow-zone{display:table-cell;position:relative;vertical-align:middle;width:25px;padding-right:5px}.Select--multi .Select-multi-value-wrapper,.Select-arrow{display:inline-block}.Select-arrow{border-color:#999 transparent transparent;border-style:solid;border-width:5px 5px 2.5px;height:0;width:0;position:relative}.Select-arrow-zone:hover>.Select-arrow,.is-open .Select-arrow{border-top-color:#666}.Select .Select-aria-only{display:inline-block;height:1px;width:1px;margin:-1px;clip:rect(0,0,0,0);overflow:hidden;float:left}.Select-noresults,.Select-option{box-sizing:border-box;display:block;padding:8px 10px}@-webkit-keyframes Select-animation-fadeIn{from{opacity:0}to{opacity:1}}@keyframes Select-animation-fadeIn{from{opacity:0}to{opacity:1}}.Select-menu-outer{border-bottom-right-radius:4px;border-bottom-left-radius:4px;background-color:#fff;border:1px solid #ccc;border-top-color:#e6e6e6;box-shadow:0 1px 0 rgba(0,0,0,.06);box-sizing:border-box;margin-top:-1px;max-height:200px;position:absolute;top:100%;width:100%;z-index:1;-webkit-overflow-scrolling:touch}.Select-menu{max-height:198px;overflow-y:auto}.Select-option{background-color:#fff;color:#666;cursor:pointer}.Select-option:last-child{border-bottom-right-radius:4px;border-bottom-left-radius:4px}.Select-option.is-selected{background-color:#f5faff;background-color:rgba(0,126,255,.04);color:#333}.Select-option.is-focused{background-color:#ebf5ff;background-color:rgba(0,126,255,.08);color:#333}.Select-option.is-disabled{color:#ccc;cursor:default}.Select-noresults{color:#999;cursor:default}.Select--multi .Select-input{vertical-align:middle;margin-left:10px;padding:0}.Select--multi.has-value .Select-input{margin-left:5px}.Select--multi .Select-value{background-color:#ebf5ff;background-color:rgba(0,126,255,.08);border-radius:2px;border:1px solid #c2e0ff;border:1px solid rgba(0,126,255,.24);color:#007eff;display:inline-block;font-size:.9em;line-height:1.4;margin-left:5px;margin-top:5px;vertical-align:top}.Select--multi .Select-value-icon,.Select--multi .Select-value-label{display:inline-block;vertical-align:middle}.Select--multi .Select-value-label{border-bottom-right-radius:2px;border-top-right-radius:2px;cursor:default;padding:2px 5px}.Select--multi a.Select-value-label{color:#007eff;cursor:pointer;text-decoration:none}.Select--multi a.Select-value-label:hover{text-decoration:underline}.Select--multi .Select-value-icon{cursor:pointer;border-bottom-left-radius:2px;border-top-left-radius:2px;border-right:1px solid #c2e0ff;border-right:1px solid rgba(0,126,255,.24);padding:1px 5px 3px}.Select--multi .Select-value-icon:focus,.Select--multi .Select-value-icon:hover{background-color:#d8eafd;background-color:rgba(0,113,230,.08);color:#0071e6}.Select--multi .Select-value-icon:active{background-color:#c2e0ff;background-color:rgba(0,126,255,.24)}.Select--multi.is-disabled .Select-value{background-color:#fcfcfc;border:1px solid #e3e3e3;color:#333}.Select--multi.is-disabled .Select-value-icon{cursor:not-allowed;border-right:1px solid #e3e3e3}.Select--multi.is-disabled .Select-value-icon:active,.Select--multi.is-disabled .Select-value-icon:focus,.Select--multi.is-disabled .Select-value-icon:hover{background-color:#fcfcfc}@keyframes Select-animation-spin{to{transform:rotate(1turn)}}@-webkit-keyframes Select-animation-spin{to{-webkit-transform:rotate(1turn)}}</style><style type="text/css">.dash-logout-btn {
+    padding: 1rem;
+    background-color: #119DFF;
+    border: 1px solid #119DFF;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dash-logout-btn:hover, .dash-logout-btn:focus {
+    background-color: #0d76bf;
+    border: 1px solid #0d76bf;
+}
+
+.dash-logout-frame {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+</style><style type="text/css">.PresetDateRangePicker_panel {
+  padding: 0 22px 11px
+}
+.PresetDateRangePicker_button {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  background: 0 0;
+  border: 2px solid #00a699;
+  color: #00a699;
+  padding: 4px 12px;
+  margin-right: 8px;
+  font: inherit;
+  font-weight: 700;
+  line-height: normal;
+  overflow: visible;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer
+}
+.PresetDateRangePicker_button:active {
+  outline: 0
+}
+.PresetDateRangePicker_button__selected {
+  color: #fff;
+  background: #00a699
+}
+.SingleDatePickerInput {
+  display: inline-block;
+  background-color: #fff
+}
+.SingleDatePickerInput__withBorder {
+  border-radius: 2px;
+  border: 1px solid #dbdbdb
+}
+.SingleDatePickerInput__rtl {
+  direction: rtl
+}
+.SingleDatePickerInput__disabled {
+  background-color: #f2f2f2
+}
+.SingleDatePickerInput__block {
+  display: block
+}
+.SingleDatePickerInput__showClearDate {
+  padding-right: 30px
+}
+.SingleDatePickerInput_clearDate {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px 0 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.SingleDatePickerInput_clearDate__default:focus,
+.SingleDatePickerInput_clearDate__default:hover {
+  background: #dbdbdb;
+  border-radius: 50%
+}
+.SingleDatePickerInput_clearDate__small {
+  padding: 6px
+}
+.SingleDatePickerInput_clearDate__hide {
+  visibility: hidden
+}
+.SingleDatePickerInput_clearDate_svg {
+  fill: #82888a;
+  height: 12px;
+  width: 15px;
+  vertical-align: middle
+}
+.SingleDatePickerInput_clearDate_svg__small {
+  height: 9px
+}
+.SingleDatePickerInput_calendarIcon {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 5px 0 10px
+}
+.SingleDatePickerInput_calendarIcon_svg {
+  fill: #82888a;
+  height: 15px;
+  width: 14px;
+  vertical-align: middle
+}
+.SingleDatePicker {
+  position: relative;
+  display: inline-block
+}
+.SingleDatePicker__block {
+  display: block
+}
+.SingleDatePicker_picker {
+  z-index: 1;
+  background-color: #fff;
+  position: absolute
+}
+.SingleDatePicker_picker__rtl {
+  direction: rtl
+}
+.SingleDatePicker_picker__directionLeft {
+  left: 0
+}
+.SingleDatePicker_picker__directionRight {
+  right: 0
+}
+.SingleDatePicker_picker__portal {
+  background-color: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%
+}
+.SingleDatePicker_picker__fullScreenPortal {
+  background-color: #fff
+}
+.SingleDatePicker_closeButton {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 2
+}
+.SingleDatePicker_closeButton:focus,
+.SingleDatePicker_closeButton:hover {
+  color: darken(#cacccd,10%);
+  text-decoration: none
+}
+.SingleDatePicker_closeButton_svg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}
+.DayPickerKeyboardShortcuts_buttonReset {
+  background: 0 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px
+}
+.DayPickerKeyboardShortcuts_buttonReset:active {
+  outline: 0
+}
+.DayPickerKeyboardShortcuts_show {
+  width: 33px;
+  height: 26px;
+  position: absolute;
+  z-index: 2
+}
+.DayPickerKeyboardShortcuts_show::before {
+  content: "";
+  display: block;
+  position: absolute
+}
+.DayPickerKeyboardShortcuts_show__bottomRight {
+  bottom: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__bottomRight::before {
+  border-top: 26px solid transparent;
+  border-right: 33px solid #00a699;
+  bottom: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__bottomRight:hover::before {
+  border-right: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_show__topRight {
+  top: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__topRight::before {
+  border-bottom: 26px solid transparent;
+  border-right: 33px solid #00a699;
+  top: 0;
+  right: 0
+}
+.DayPickerKeyboardShortcuts_show__topRight:hover::before {
+  border-right: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_show__topLeft {
+  top: 0;
+  left: 0
+}
+.DayPickerKeyboardShortcuts_show__topLeft::before {
+  border-bottom: 26px solid transparent;
+  border-left: 33px solid #00a699;
+  top: 0;
+  left: 0
+}
+.DayPickerKeyboardShortcuts_show__topLeft:hover::before {
+  border-left: 33px solid #008489
+}
+.DayPickerKeyboardShortcuts_showSpan {
+  color: #fff;
+  position: absolute
+}
+.DayPickerKeyboardShortcuts_showSpan__bottomRight {
+  bottom: 0;
+  right: 5px
+}
+.DayPickerKeyboardShortcuts_showSpan__topRight {
+  top: 1px;
+  right: 5px
+}
+.DayPickerKeyboardShortcuts_showSpan__topLeft {
+  top: 1px;
+  left: 5px
+}
+.DayPickerKeyboardShortcuts_panel {
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  padding: 22px;
+  margin: 33px;
+  text-align: left
+}
+.DayPickerKeyboardShortcuts_title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0
+}
+.DayPickerKeyboardShortcuts_list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px
+}
+.DayPickerKeyboardShortcuts_close {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  z-index: 2
+}
+.DayPickerKeyboardShortcuts_close:active {
+  outline: 0
+}
+.DayPickerKeyboardShortcuts_closeSvg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}
+.DayPickerKeyboardShortcuts_closeSvg:focus,
+.DayPickerKeyboardShortcuts_closeSvg:hover {
+  fill: #82888a
+}
+.CalendarDay {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center
+}
+.CalendarDay:active {
+  outline: 0
+}
+.CalendarDay__defaultCursor {
+  cursor: default
+}
+.CalendarDay__default {
+  border: 1px solid #e4e7e7;
+  color: #484848;
+  background: #fff
+}
+.CalendarDay__default:hover {
+  background: #e4e7e7;
+  border: 1px solid #e4e7e7;
+  color: inherit
+}
+.CalendarDay__hovered_offset {
+  background: #f4f5f5;
+  border: 1px double #e4e7e7;
+  color: inherit
+}
+.CalendarDay__outside {
+  border: 0;
+  background: #fff;
+  color: #484848
+}
+.CalendarDay__outside:hover {
+  border: 0
+}
+.CalendarDay__blocked_minimum_nights {
+  background: #fff;
+  border: 1px solid #eceeee;
+  color: #cacccd
+}
+.CalendarDay__blocked_minimum_nights:active,
+.CalendarDay__blocked_minimum_nights:hover {
+  background: #fff;
+  color: #cacccd
+}
+.CalendarDay__highlighted_calendar {
+  background: #ffe8bc;
+  color: #484848
+}
+.CalendarDay__highlighted_calendar:active,
+.CalendarDay__highlighted_calendar:hover {
+  background: #ffce71;
+  color: #484848
+}
+.CalendarDay__selected_span {
+  background: #66e2da;
+  border: 1px double #33dacd;
+  color: #fff
+}
+.CalendarDay__selected_span:active,
+.CalendarDay__selected_span:hover {
+  background: #33dacd;
+  border: 1px double #33dacd;
+  color: #fff
+}
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover {
+  background: #00a699;
+  border: 1px double #00a699;
+  color: #fff
+}
+.CalendarDay__hovered_span,
+.CalendarDay__hovered_span:hover {
+  background: #b2f1ec;
+  border: 1px double #80e8e0;
+  color: #007a87
+}
+.CalendarDay__hovered_span:active {
+  background: #80e8e0;
+  border: 1px double #80e8e0;
+  color: #007a87
+}
+.CalendarDay__blocked_calendar,
+.CalendarDay__blocked_calendar:active,
+.CalendarDay__blocked_calendar:hover {
+  background: #cacccd;
+  border: 1px solid #cacccd;
+  color: #82888a
+}
+.CalendarDay__blocked_out_of_range,
+.CalendarDay__blocked_out_of_range:active,
+.CalendarDay__blocked_out_of_range:hover {
+  background: #fff;
+  border: 1px solid #e4e7e7;
+  color: #cacccd
+}
+.CalendarDay__hovered_start_first_possible_end {
+  background: #eceeee;
+  border: 1px double #eceeee
+}
+.CalendarDay__hovered_start_blocked_min_nights {
+  background: #eceeee;
+  border: 1px double #e4e7e7
+}
+.CalendarMonth {
+  background: #fff;
+  text-align: center;
+  vertical-align: top;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.CalendarMonth_table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+.CalendarMonth_verticalSpacing {
+  border-collapse: separate
+}
+.CalendarMonth_caption {
+  color: #484848;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 37px;
+  caption-side: initial
+}
+.CalendarMonth_caption__verticalScrollable {
+  padding-top: 12px;
+  padding-bottom: 7px
+}
+.CalendarMonthGrid {
+  background: #fff;
+  text-align: left;
+  z-index: 0
+}
+.CalendarMonthGrid__animating {
+  z-index: 1
+}
+.CalendarMonthGrid__horizontal {
+  position: absolute;
+  left: 9px
+}
+.CalendarMonthGrid__vertical {
+  margin: 0 auto
+}
+.CalendarMonthGrid__vertical_scrollable {
+  margin: 0 auto;
+  overflow-y: scroll
+}
+.CalendarMonthGrid_month__horizontal {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 100%
+}
+.CalendarMonthGrid_month__hideForAnimation {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none
+}
+.CalendarMonthGrid_month__hidden {
+  visibility: hidden
+}
+.DayPickerNavigation {
+  position: relative;
+  z-index: 2
+}
+.DayPickerNavigation__horizontal {
+  height: 0
+}
+.DayPickerNavigation__verticalDefault {
+  position: absolute;
+  width: 100%;
+  height: 52px;
+  bottom: 0;
+  left: 0
+}
+.DayPickerNavigation__verticalScrollableDefault {
+  position: relative
+}
+.DayPickerNavigation_button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0;
+  padding: 0;
+  margin: 0
+}
+.DayPickerNavigation_button__default {
+  border: 1px solid #e4e7e7;
+  background-color: #fff;
+  color: #757575
+}
+.DayPickerNavigation_button__default:focus,
+.DayPickerNavigation_button__default:hover {
+  border: 1px solid #c4c4c4
+}
+.DayPickerNavigation_button__default:active {
+  background: #f2f2f2
+}
+.DayPickerNavigation_button__disabled {
+  cursor: default;
+  border: 1px solid #f2f2f2
+}
+.DayPickerNavigation_button__disabled:focus,
+.DayPickerNavigation_button__disabled:hover {
+  border: 1px solid #f2f2f2
+}
+.DayPickerNavigation_button__disabled:active {
+  background: 0 0
+}
+.DayPickerNavigation_button__horizontalDefault {
+  position: absolute;
+  top: 18px;
+  line-height: .78;
+  border-radius: 3px;
+  padding: 6px 9px
+}
+.DayPickerNavigation_leftButton__horizontalDefault {
+  left: 22px
+}
+.DayPickerNavigation_rightButton__horizontalDefault {
+  right: 22px
+}
+.DayPickerNavigation_button__verticalDefault {
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.1);
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  width: 50%
+}
+.DayPickerNavigation_nextButton__verticalDefault {
+  border-left: 0
+}
+.DayPickerNavigation_nextButton__verticalScrollableDefault {
+  width: 100%
+}
+.DayPickerNavigation_svg__horizontal {
+  height: 19px;
+  width: 19px;
+  fill: #82888a;
+  display: block
+}
+.DayPickerNavigation_svg__vertical {
+  height: 42px;
+  width: 42px;
+  fill: #484848
+}
+.DayPickerNavigation_svg__disabled {
+  fill: #f2f2f2
+}
+.DayPicker {
+  background: #fff;
+  position: relative;
+  text-align: left
+}
+.DayPicker__horizontal {
+  background: #fff
+}
+.DayPicker__verticalScrollable {
+  height: 100%
+}
+.DayPicker__hidden {
+  visibility: hidden
+}
+.DayPicker__withBorder {
+  box-shadow: 0 2px 6px rgba(0,0,0,.05),0 0 0 1px rgba(0,0,0,.07);
+  border-radius: 3px
+}
+.DayPicker_portal__horizontal {
+  box-shadow: none;
+  position: absolute;
+  left: 50%;
+  top: 50%
+}
+.DayPicker_portal__vertical {
+  position: initial
+}
+.DayPicker_focusRegion {
+  outline: 0
+}
+.DayPicker_calendarInfo__horizontal,
+.DayPicker_wrapper__horizontal {
+  display: inline-block;
+  vertical-align: top
+}
+.DayPicker_weekHeaders {
+  position: relative
+}
+.DayPicker_weekHeaders__horizontal {
+  margin-left: 9px
+}
+.DayPicker_weekHeader {
+  color: #757575;
+  position: absolute;
+  top: 62px;
+  z-index: 2;
+  text-align: left
+}
+.DayPicker_weekHeader__vertical {
+  left: 50%
+}
+.DayPicker_weekHeader__verticalScrollable {
+  top: 0;
+  display: table-row;
+  border-bottom: 1px solid #dbdbdb;
+  background: #fff;
+  margin-left: 0;
+  left: 0;
+  width: 100%;
+  text-align: center
+}
+.DayPicker_weekHeader_ul {
+  list-style: none;
+  margin: 1px 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 14px
+}
+.DayPicker_weekHeader_li {
+  display: inline-block;
+  text-align: center
+}
+.DayPicker_transitionContainer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px
+}
+.DayPicker_transitionContainer__horizontal {
+  -webkit-transition: height .2s ease-in-out;
+  -moz-transition: height .2s ease-in-out;
+  transition: height .2s ease-in-out
+}
+.DayPicker_transitionContainer__vertical {
+  width: 100%
+}
+.DayPicker_transitionContainer__verticalScrollable {
+  padding-top: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow-y: scroll
+}
+.DateInput {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  vertical-align: middle
+}
+.DateInput__small {
+  width: 97px
+}
+.DateInput__block {
+  width: 100%
+}
+.DateInput__disabled {
+  background: #f2f2f2;
+  color: #dbdbdb
+}
+.DateInput_input {
+  font-weight: 200;
+  font-size: 19px;
+  line-height: 24px;
+  color: #484848;
+  background-color: #fff;
+  width: 100%;
+  padding: 11px 11px 9px;
+  border: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid transparent;
+  border-left: 0;
+  border-radius: 0
+}
+.DateInput_input__small {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: .2px;
+  padding: 7px 7px 5px
+}
+.DateInput_input__regular {
+  font-weight: auto
+}
+.DateInput_input__readOnly {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.DateInput_input__focused {
+  outline: 0;
+  background: #fff;
+  border: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #008489;
+  border-left: 0
+}
+.DateInput_input__disabled {
+  background: #f2f2f2;
+  font-style: italic
+}
+.DateInput_screenReaderMessage {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px
+}
+.DateInput_fang {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  left: 22px;
+  z-index: 2
+}
+.DateInput_fangShape {
+  fill: #fff
+}
+.DateInput_fangStroke {
+  stroke: #dbdbdb;
+  fill: transparent
+}
+.DateRangePickerInput {
+  background-color: #fff;
+  display: inline-block
+}
+.DateRangePickerInput__disabled {
+  background: #f2f2f2
+}
+.DateRangePickerInput__withBorder {
+  border-radius: 2px;
+  border: 1px solid #dbdbdb
+}
+.DateRangePickerInput__rtl {
+  direction: rtl
+}
+.DateRangePickerInput__block {
+  display: block
+}
+.DateRangePickerInput__showClearDates {
+  padding-right: 30px
+}
+.DateRangePickerInput_arrow {
+  display: inline-block;
+  vertical-align: middle;
+  color: #484848
+}
+.DateRangePickerInput_arrow_svg {
+  vertical-align: middle;
+  fill: #484848;
+  height: 24px;
+  width: 24px
+}
+.DateRangePickerInput_clearDates {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px 0 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.DateRangePickerInput_clearDates__small {
+  padding: 6px
+}
+.DateRangePickerInput_clearDates_default:focus,
+.DateRangePickerInput_clearDates_default:hover {
+  background: #dbdbdb;
+  border-radius: 50%
+}
+.DateRangePickerInput_clearDates__hide {
+  visibility: hidden
+}
+.DateRangePickerInput_clearDates_svg {
+  fill: #82888a;
+  height: 12px;
+  width: 15px;
+  vertical-align: middle
+}
+.DateRangePickerInput_clearDates_svg__small {
+  height: 9px
+}
+.DateRangePickerInput_calendarIcon {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 0 5px 0 10px
+}
+.DateRangePickerInput_calendarIcon_svg {
+  fill: #82888a;
+  height: 15px;
+  width: 14px;
+  vertical-align: middle
+}
+.DateRangePicker {
+  position: relative;
+  display: inline-block
+}
+.DateRangePicker__block {
+  display: block
+}
+.DateRangePicker_picker {
+  z-index: 1;
+  background-color: #fff;
+  position: absolute
+}
+.DateRangePicker_picker__rtl {
+  direction: rtl
+}
+.DateRangePicker_picker__directionLeft {
+  left: 0
+}
+.DateRangePicker_picker__directionRight {
+  right: 0
+}
+.DateRangePicker_picker__portal {
+  background-color: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%
+}
+.DateRangePicker_picker__fullScreenPortal {
+  background-color: #fff
+}
+.DateRangePicker_closeButton {
+  background: 0 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 2
+}
+.DateRangePicker_closeButton:focus,
+.DateRangePicker_closeButton:hover {
+  color: darken(#cacccd,10%);
+  text-decoration: none
+}
+.DateRangePicker_closeButton_svg {
+  height: 15px;
+  width: 15px;
+  fill: #cacccd
+}</style><style type="text/css">.DateInput_input {
+    box-sizing: border-box;
+}
+
+.DayPickerNavigation__verticalDefault {
+    text-align: center;
+    height: initial;
+    padding: 10px 0px;
+}
+
+.DayPickerNavigation_svg__vertical {
+    height: 20px;
+}
+</style><style type="text/css">/**
+ * Default styles
+ */
+.hljs {
+    display: block;
+    padding: 0.5em;
+    overflow-x: auto;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+/**
+ * Light theme styles
+ * Light theme from react-syntax-highlighter 'arduino-light'
+ * https://github.com/conorhastings/react-syntax-highlighter/blob/master/src/styles/hljs/arduino-light.js
+ */
+.hljs {
+    background: #FFFFFF;
+    color: #434f54;
+}
+
+.hljs-comment {
+    color: rgba(149,165,166,.8);
+}
+
+.hljs-built_in,
+.hljs-literal,
+.hljs-bullet,
+.hljs-code,
+.hljs-addition {
+  color: #D35400;
+}
+
+.hljs-meta-keyboard,
+.hljs-function {
+    color: #728E00;
+}
+
+.hljs-meta {
+    color: #434f54;
+}
+
+.hljs-type,
+.hljs-string,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-quote,
+.hljs-template-tag,
+.hljs-deletion {
+  color: #005C5F;
+}
+
+.hljs-title,
+.hljs-section {
+  color: #880000;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-attribute,
+.hljs-tag,
+.hljs-doctag,
+.hljs-name,
+.hljs-regexp,
+.hljs-symbol,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-selector-attr,
+.hljs-selector-psuedo {
+  color: #00979D;
+}
+
+.hljs-subst {
+    color: #434f54;
+}
+
+.hljs-number {
+    color: #8A7B52;
+}
+
+/**
+ * Dark theme styles
+ * Dark theme from react-syntax-highlighter 'monokai'
+ * https://github.com/conorhastings/react-syntax-highlighter/blob/master/src/styles/hljs/monokai.js
+ */
+.hljs-dark .hljs {
+    background: #272822;
+    color: #ddd;
+}
+
+.hljs-dark .hljs-tag,
+.hljs-dark .hljs-keyword,
+.hljs-dark .hljs-selector-tag,
+.hljs-dark .hljs-literal,
+.hljs-dark .hljs-strong,
+.hljs-dark .hljs-name {
+    color: #f92672;
+}
+
+.hljs-dark .hljs-code {
+    color: #66d9ef;
+}
+
+.hljs-dark .hljs-class .hljs-title {
+    color: #ffffff;
+}
+
+.hljs-dark .hljs-attribute,
+.hljs-dark .hljs-symbol,
+.hljs-dark .hljs-regexp,
+.hljs-dark .hljs-link {
+    color: #bf79db;
+}
+
+.hljs-dark .hljs-string,
+.hljs-dark .hljs-bullet,
+.hljs-dark .hljs-subst,
+.hljs-dark .hljs-title,
+.hljs-dark .hljs-section,
+.hljs-dark .hljs-emphasis,
+.hljs-dark .hljs-type,
+.hljs-dark .hljs-built_in,
+.hljs-dark .hljs-builtin-name,
+.hljs-dark .hljs-selector-attr,
+.hljs-dark .hljs-selector-pseudo,
+.hljs-dark .hljs-addition,
+.hljs-dark .hljs-variable,
+.hljs-dark .hljs-template-tag,
+.hljs-dark .hljs-template-variable {
+    color: #a6e22e;
+}
+
+.hljs-dark .hljs-comment,
+.hljs-dark .hljs-quote,
+.hljs-dark .hljs-deletion,
+.hljs-dark .hljs-meta {
+    color: #75715e;
+}
+
+.hljs-dark .hljs-doctag,
+.hljs-dark .hljs-selector-id {
+    font-weight: bold;
+}
+</style>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+                <title>User Interactions | Dash for Python Documentation | Plotly</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="
+                        Overview of user-interaction events that trigger callbacks in Dash,
+                        and how to use them to update the Cytoscape component.
+                        ">
+                <meta name="google-site-verification" content="EgLBLquJuqD_NR96F-pKLhTy9ZKQlWIoQlexW_OVKrM">
+                <title>User Interactions | Dash for Python Documentation | Plotly</title>
+                <link rel="icon" type="image/x-icon" href="https://dash.plotly.com/assets/favicon.ico?m=1586016011.0">
+                <link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/font-awesome.min.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/base.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/daq.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/dashbio.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/dosis.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/loading.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/local-css-example.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/open-sans.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/override.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/pdf-docs.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/percy.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/table.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/tabs-styled-with-classes.css">
+<link rel="stylesheet" href="./User Interactions _ Dash for Python Documentation _ Plotly_files/typography.css">
+        
+                <!-- Google Tag Manager Tag -->
+                <script type="text/javascript" async="" src="./User Interactions _ Dash for Python Documentation _ Plotly_files/insight.min.js.download"></script><script type="text/javascript" async="" src="./User Interactions _ Dash for Python Documentation _ Plotly_files/analytics.js.download"></script><script async="" src="./User Interactions _ Dash for Python Documentation _ Plotly_files/gtm.js.download"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-N6T2RXG');</script>
+            <style type="text/css">.forna-container .structure-background-rect {
+    stroke: black;
+    stroke-width: 5;
+    fill: transparent;
+}
+
+.forna-container circle.rna-base {
+  stroke: #ccc;
+  stroke-width: 1px;
+  opacity: 1;
+  fill: white;
+}
+
+.forna-container circle.rna-base.label {
+    stroke: transparent;
+    stroke-width: 0;
+    fill: white;
+}
+
+.forna-container line.link {
+  stroke: #999;
+  stroke-opacity: 0.8;
+  stroke-width: 2;
+}
+
+.forna-container line.rna-link {
+  stroke: #999;
+  stroke-opacity: 0.8;
+  stroke-width: 2;
+}
+
+.forna-container .overlay {
+    fill: transparent;
+}
+
+.forna-container .rna-name {
+    text-anchor: middle;
+    dy: -10;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 8pt;
+}
+
+.forna-container line.rna-link[link-type="backbone"] {
+    stroke: transparent;
+}
+
+.forna-container line.rna-link[link-type="basepair"] {
+    stroke: transparent;
+}
+
+.forna-container line.rna-link[link-type="fake"] {
+    stroke: transparent;
+}
+
+.forna-container line.rna-link[link-type="extra"] {
+    stroke: grey;
+}
+
+.forna-container line.rna-link[extra-link-type="correct"] {
+    stroke: green;
+}
+
+.forna-container line.rna-link[extra-link-type="incorrect"] {
+    stroke: green;
+}
+
+
+.forna-container path {
+    stroke-width: 2;
+}
+
+.forna-container path[extra-link-type="correct"] {
+    stroke: green;
+}
+
+.forna-container path[extra-link-type="incorrect"] {
+    stroke: red;
+}
+
+
+.forna-container line.basepair {
+  stroke: red;
+}
+
+.forna-container line.intermolecule {
+  stroke: blue;
+}
+
+.forna-container line.chain_chain {
+  stroke-dasharray: 3,3;
+}
+
+.forna-container line.fake {
+  stroke: green;
+}
+
+.forna-container .transparent {
+    fill: transparent;
+    stroke-width: 0;
+    stroke-opacity: 0;
+    opacity: 0;
+}
+
+.forna-container .d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.forna-container text.nucleotide-label {
+    font-size: 5.5pt;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: rgb(100,100,100);
+    pointer-events: none;
+}
+
+.forna-container text.number-label {
+    font-size: 5.5pt;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: rgb(100,100,100);
+    pointer-events: none;
+}
+
+.forna-container text {
+    pointer-events: none;
+}
+
+.forna-container g.gnode {
+
+}
+
+.forna-container .brush .extent {
+  fill-opacity: .1;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.forna-container .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+</style><style type="text/css">.forna-container svg {
+  display: block;
+  min-width: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+
+.forna-container circle.node {
+  stroke: #ccc;
+  stroke-width: 1px;
+  opacity: 1;
+  fill: white;
+}
+
+.forna-container polygon.node {
+  stroke: #ccc;
+  stroke-width: 1px;
+  opacity: 1;
+  fill: white;
+}
+
+.forna-container circle.node.label {
+    stroke: transparent;
+    stroke-width: 0;
+    fill: white;
+    display: inline;
+}
+
+.forna-container circle.outline_node {
+    stroke-width: 1px;
+    fill: red;
+}
+
+.forna-container circle.protein {
+    fill: gray;
+    fill-opacity: 0.5;
+    stroke-width: 4;
+}
+
+.forna-container circle.hidden_outline {
+    stroke-width: 0px;
+}
+
+
+.forna-container line.link {
+  stroke: #999;
+  stroke-opacity: 0.8;
+  stroke-width: 2;
+}
+
+.forna-container line.pseudoknot {
+    stroke: red;
+}
+
+.forna-container line.basepair {
+  stroke: red;
+}
+
+.forna-container line.intermolecule {
+  stroke: blue;
+}
+
+.forna-container line.chain_chain {
+  stroke-dasharray: 3,3;
+}
+
+.forna-container line.fake {
+  stroke: green;
+}
+
+.forna-container .transparent {
+    fill: transparent;
+    stroke-width: 0;
+    stroke-opacity: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.forna-container .drag_line {
+  stroke: #999;
+  stroke-width: 2;
+  pointer-events: none;
+}
+
+.forna-container .drag_line_hidden {
+  stroke: #999;
+  stroke-width: 0;
+  pointer-events: none;
+}
+
+.forna-container .d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 4px;
+    pointer-events: none;
+          }
+
+.forna-container text.node-label {
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: rgb(100,100,100);
+    pointer-events: none;
+}
+
+.forna-container text {
+    pointer-events: none;
+}
+
+.forna-container g.gnode {
+
+}
+
+.forna-container circle.outline_node.selected {
+    visibility: visible;
+}
+
+.forna-container circle.outline_node {
+    visibility: hidden;
+}
+
+.forna-container .brush .extent {
+  fill-opacity: .1;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.forna-container .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+</style><style data-styled="" data-styled-version="4.4.0"></style><script type="application/javascript" async="" src="./User Interactions _ Dash for Python Documentation _ Plotly_files/1772.js.download"></script><script charset="utf-8" src="./User Interactions _ Dash for Python Documentation _ Plotly_files/async-markdown.v1_9_0m1585774446.js.download"></script><script charset="utf-8" src="./User Interactions _ Dash for Python Documentation _ Plotly_files/async-highlight.v1_9_0m1585774446.js.download"></script></head>
+            <body>
+                <!-- Google Tag Manager Tag -->
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6T2RXG"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        
+                
+<div id="react-entry-point"><div><div id="wait-for-layout"></div><div class="header"><div class="container-width" style="height: 100%;"><span class="logo"><a href="https://plotly.com/"><img src="./User Interactions _ Dash for Python Documentation _ Plotly_files/logo-plotly.png"></a><img src="./User Interactions _ Dash for Python Documentation _ Plotly_files/logo-seperator.png"><a id="logo-home" href="https://dash.plotly.com/"><img src="./User Interactions _ Dash for Python Documentation _ Plotly_files/logo-dash.png"></a></span><div class="links"><a href="https://community.plotly.com/tag/announcements">Announcements</a><a href="https://community.plotly.com/tag/show-and-tell">Show &amp; Tell</a><a href="https://community.plotly.com/c/dash">Community Forum</a><iframe src="./User Interactions _ Dash for Python Documentation _ Plotly_files/github-btn.html" style="border: none; height: 30px; vertical-align: middle; margin-top: 9px; width: 105px;"></iframe></div></div></div><div class="content-wrapper"><div class="sidebar"><input tabindex="1" type="search" autocomplete="false" id="sidebar-search-input" placeholder="Filter..." value=""><div class="sidebar--0"><details><summary>What's Dash?</summary><div class="sidebar--1"><a class="" href="https://dash.plotly.com/introduction">Introduction</a><a href="https://medium.com/@plotlygraphs/introducing-dash-5ecf7191b503" title="Our extended essay on Dash. An extended discussion of
+                    Dash&#39;s architecture and our motivation behind the project." class="">Announcement Essay (2017)</a><a href="https://dash-gallery.plotly.host/Portal/" title="A glimpse into what&#39;s possible with Dash." class="">Dash App Gallery</a><a class="" href="https://dash.plotly.com/dash-1-0-migration">Dash 1.0.0 Migration</a><a href="https://go.plotly.com/dash-club" title="An email newsletter by chriddyp, the creator of Dash." class="">Dash Club</a></div></details><details><summary>Dash Tutorial</summary><div class="sidebar--1"><a class="" href="https://dash.plotly.com/installation">Part 1. Installation</a><a class="" href="https://dash.plotly.com/layout">Part 2. Layout</a><a class="" href="https://dash.plotly.com/basic-callbacks">Part 3. Basic Callbacks</a><a class="" href="https://dash.plotly.com/interactive-graphing">Part 4. Interactive Graphing and Crossfiltering</a><a class="" href="https://dash.plotly.com/sharing-data-between-callbacks">Part 5. Sharing Data Between Callbacks</a><a class="" href="https://dash.plotly.com/faqs">Part 6. FAQs</a></div></details><details><summary>Dash Callbacks</summary><div class="sidebar--1"><a class="" href="https://dash.plotly.com/basic-callbacks">Basic Callbacks</a><a class="" href="https://dash.plotly.com/advanced-callbacks">Advanced Callbacks</a><a class="" href="https://dash.plotly.com/clientside-callbacks">Clientside Callbacks</a><a class="" href="https://dash.plotly.com/callback-gotchas">Callback Gotchas</a></div></details><details open=""><summary>Open Source Component Libraries</summary><div class="sidebar--1"><details><summary>Dash Core Components</summary><div class="sidebar--2"><a class="" href="https://dash.plotly.com/dash-core-components">Overview</a><a class="" href="https://dash.plotly.com/dash-core-components/checklist">dcc.Checklist</a><a class="" href="https://dash.plotly.com/dash-core-components/confirmdialog">dcc.ConfirmDialog</a><a class="" href="https://dash.plotly.com/dash-core-components/confirmdialogprovider">dcc.ConfirmDialogProvider</a><a class="" href="https://dash.plotly.com/dash-core-components/datepickerrange">dcc.DatePickerRange</a><a class="" href="https://dash.plotly.com/dash-core-components/datepickersingle">dcc.DatePickerSingle</a><a class="" href="https://dash.plotly.com/dash-core-components/dropdown">dcc.Dropdown</a><a class="" href="https://dash.plotly.com/dash-core-components/graph">dcc.Graph</a><a class="" href="https://dash.plotly.com/dash-core-components/input">dcc.Input</a><a class="" href="https://dash.plotly.com/dash-core-components/interval">dcc.Interval</a><a class="" href="https://dash.plotly.com/dash-core-components/link">dcc.Link</a><a class="" href="https://dash.plotly.com/dash-core-components/loading">dcc.Loading</a><a class="" href="https://dash.plotly.com/dash-core-components/location">dcc.Location</a><a class="" href="https://dash.plotly.com/dash-core-components/logoutbutton">dcc.LogoutButton</a><a class="" href="https://dash.plotly.com/dash-core-components/markdown">dcc.Markdown</a><a class="" href="https://dash.plotly.com/dash-core-components/radioitems">dcc.RadioItems</a><a class="" href="https://dash.plotly.com/dash-core-components/rangeslider">dcc.RangeSlider</a><a class="" href="https://dash.plotly.com/dash-core-components/slider">dcc.Slider</a><a class="" href="https://dash.plotly.com/dash-core-components/store">dcc.Store</a><a class="" href="https://dash.plotly.com/dash-core-components/tab">dcc.Tab</a><a class="" href="https://dash.plotly.com/dash-core-components/tabs">dcc.Tabs</a><a class="" href="https://dash.plotly.com/dash-core-components/textarea">dcc.Textarea</a><a class="" href="https://dash.plotly.com/dash-core-components/upload">dcc.Upload</a></div></details><details><summary>Dash HTML Components</summary><div class="sidebar--2"><a class="" href="https://dash.plotly.com/dash-html-components">Overview</a><a class="" href="https://dash.plotly.com/dash-html-components/a">html.A</a><a class="" href="https://dash.plotly.com/dash-html-components/abbr">html.Abbr</a><a class="" href="https://dash.plotly.com/dash-html-components/acronym">html.Acronym</a><a class="" href="https://dash.plotly.com/dash-html-components/address">html.Address</a><a class="" href="https://dash.plotly.com/dash-html-components/area">html.Area</a><a class="" href="https://dash.plotly.com/dash-html-components/article">html.Article</a><a class="" href="https://dash.plotly.com/dash-html-components/aside">html.Aside</a><a class="" href="https://dash.plotly.com/dash-html-components/audio">html.Audio</a><a class="" href="https://dash.plotly.com/dash-html-components/b">html.B</a><a class="" href="https://dash.plotly.com/dash-html-components/base">html.Base</a><a class="" href="https://dash.plotly.com/dash-html-components/basefont">html.Basefont</a><a class="" href="https://dash.plotly.com/dash-html-components/bdi">html.Bdi</a><a class="" href="https://dash.plotly.com/dash-html-components/bdo">html.Bdo</a><a class="" href="https://dash.plotly.com/dash-html-components/big">html.Big</a><a class="" href="https://dash.plotly.com/dash-html-components/blink">html.Blink</a><a class="" href="https://dash.plotly.com/dash-html-components/blockquote">html.Blockquote</a><a class="" href="https://dash.plotly.com/dash-html-components/br">html.Br</a><a class="" href="https://dash.plotly.com/dash-html-components/button">html.Button</a><a class="" href="https://dash.plotly.com/dash-html-components/canvas">html.Canvas</a><a class="" href="https://dash.plotly.com/dash-html-components/caption">html.Caption</a><a class="" href="https://dash.plotly.com/dash-html-components/center">html.Center</a><a class="" href="https://dash.plotly.com/dash-html-components/cite">html.Cite</a><a class="" href="https://dash.plotly.com/dash-html-components/code">html.Code</a><a class="" href="https://dash.plotly.com/dash-html-components/col">html.Col</a><a class="" href="https://dash.plotly.com/dash-html-components/colgroup">html.Colgroup</a><a class="" href="https://dash.plotly.com/dash-html-components/command">html.Command</a><a class="" href="https://dash.plotly.com/dash-html-components/content">html.Content</a><a class="" href="https://dash.plotly.com/dash-html-components/data">html.Data</a><a class="" href="https://dash.plotly.com/dash-html-components/datalist">html.Datalist</a><a class="" href="https://dash.plotly.com/dash-html-components/dd">html.Dd</a><a class="" href="https://dash.plotly.com/dash-html-components/del">html.Del</a><a class="" href="https://dash.plotly.com/dash-html-components/details">html.Details</a><a class="" href="https://dash.plotly.com/dash-html-components/dfn">html.Dfn</a><a class="" href="https://dash.plotly.com/dash-html-components/dialog">html.Dialog</a><a class="" href="https://dash.plotly.com/dash-html-components/div">html.Div</a><a class="" href="https://dash.plotly.com/dash-html-components/dl">html.Dl</a><a class="" href="https://dash.plotly.com/dash-html-components/dt">html.Dt</a><a class="" href="https://dash.plotly.com/dash-html-components/element">html.Element</a><a class="" href="https://dash.plotly.com/dash-html-components/em">html.Em</a><a class="" href="https://dash.plotly.com/dash-html-components/embed">html.Embed</a><a class="" href="https://dash.plotly.com/dash-html-components/fieldset">html.Fieldset</a><a class="" href="https://dash.plotly.com/dash-html-components/figcaption">html.Figcaption</a><a class="" href="https://dash.plotly.com/dash-html-components/figure">html.Figure</a><a class="" href="https://dash.plotly.com/dash-html-components/font">html.Font</a><a class="" href="https://dash.plotly.com/dash-html-components/footer">html.Footer</a><a class="" href="https://dash.plotly.com/dash-html-components/form">html.Form</a><a class="" href="https://dash.plotly.com/dash-html-components/frame">html.Frame</a><a class="" href="https://dash.plotly.com/dash-html-components/frameset">html.Frameset</a><a class="" href="https://dash.plotly.com/dash-html-components/h1">html.H1</a><a class="" href="https://dash.plotly.com/dash-html-components/h2">html.H2</a><a class="" href="https://dash.plotly.com/dash-html-components/h3">html.H3</a><a class="" href="https://dash.plotly.com/dash-html-components/h4">html.H4</a><a class="" href="https://dash.plotly.com/dash-html-components/h5">html.H5</a><a class="" href="https://dash.plotly.com/dash-html-components/h6">html.H6</a><a class="" href="https://dash.plotly.com/dash-html-components/header">html.Header</a><a class="" href="https://dash.plotly.com/dash-html-components/hgroup">html.Hgroup</a><a class="" href="https://dash.plotly.com/dash-html-components/hr">html.Hr</a><a class="" href="https://dash.plotly.com/dash-html-components/i">html.I</a><a class="" href="https://dash.plotly.com/dash-html-components/iframe">html.Iframe</a><a class="" href="https://dash.plotly.com/dash-html-components/img">html.Img</a><a class="" href="https://dash.plotly.com/dash-html-components/ins">html.Ins</a><a class="" href="https://dash.plotly.com/dash-html-components/isindex">html.Isindex</a><a class="" href="https://dash.plotly.com/dash-html-components/kbd">html.Kbd</a><a class="" href="https://dash.plotly.com/dash-html-components/keygen">html.Keygen</a><a class="" href="https://dash.plotly.com/dash-html-components/label">html.Label</a><a class="" href="https://dash.plotly.com/dash-html-components/legend">html.Legend</a><a class="" href="https://dash.plotly.com/dash-html-components/li">html.Li</a><a class="" href="https://dash.plotly.com/dash-html-components/link">html.Link</a><a class="" href="https://dash.plotly.com/dash-html-components/listing">html.Listing</a><a class="" href="https://dash.plotly.com/dash-html-components/main">html.Main</a><a class="" href="https://dash.plotly.com/dash-html-components/mapel">html.MapEl</a><a class="" href="https://dash.plotly.com/dash-html-components/mark">html.Mark</a><a class="" href="https://dash.plotly.com/dash-html-components/marquee">html.Marquee</a><a class="" href="https://dash.plotly.com/dash-html-components/meta">html.Meta</a><a class="" href="https://dash.plotly.com/dash-html-components/meter">html.Meter</a><a class="" href="https://dash.plotly.com/dash-html-components/multicol">html.Multicol</a><a class="" href="https://dash.plotly.com/dash-html-components/nav">html.Nav</a><a class="" href="https://dash.plotly.com/dash-html-components/nextid">html.Nextid</a><a class="" href="https://dash.plotly.com/dash-html-components/nobr">html.Nobr</a><a class="" href="https://dash.plotly.com/dash-html-components/noscript">html.Noscript</a><a class="" href="https://dash.plotly.com/dash-html-components/objectel">html.ObjectEl</a><a class="" href="https://dash.plotly.com/dash-html-components/ol">html.Ol</a><a class="" href="https://dash.plotly.com/dash-html-components/optgroup">html.Optgroup</a><a class="" href="https://dash.plotly.com/dash-html-components/option">html.Option</a><a class="" href="https://dash.plotly.com/dash-html-components/output">html.Output</a><a class="" href="https://dash.plotly.com/dash-html-components/p">html.P</a><a class="" href="https://dash.plotly.com/dash-html-components/param">html.Param</a><a class="" href="https://dash.plotly.com/dash-html-components/picture">html.Picture</a><a class="" href="https://dash.plotly.com/dash-html-components/plaintext">html.Plaintext</a><a class="" href="https://dash.plotly.com/dash-html-components/pre">html.Pre</a><a class="" href="https://dash.plotly.com/dash-html-components/progress">html.Progress</a><a class="" href="https://dash.plotly.com/dash-html-components/q">html.Q</a><a class="" href="https://dash.plotly.com/dash-html-components/rb">html.Rb</a><a class="" href="https://dash.plotly.com/dash-html-components/rp">html.Rp</a><a class="" href="https://dash.plotly.com/dash-html-components/rt">html.Rt</a><a class="" href="https://dash.plotly.com/dash-html-components/rtc">html.Rtc</a><a class="" href="https://dash.plotly.com/dash-html-components/ruby">html.Ruby</a><a class="" href="https://dash.plotly.com/dash-html-components/s">html.S</a><a class="" href="https://dash.plotly.com/dash-html-components/samp">html.Samp</a><a class="" href="https://dash.plotly.com/dash-html-components/script">html.Script</a><a class="" href="https://dash.plotly.com/dash-html-components/section">html.Section</a><a class="" href="https://dash.plotly.com/dash-html-components/select">html.Select</a><a class="" href="https://dash.plotly.com/dash-html-components/shadow">html.Shadow</a><a class="" href="https://dash.plotly.com/dash-html-components/slot">html.Slot</a><a class="" href="https://dash.plotly.com/dash-html-components/small">html.Small</a><a class="" href="https://dash.plotly.com/dash-html-components/source">html.Source</a><a class="" href="https://dash.plotly.com/dash-html-components/spacer">html.Spacer</a><a class="" href="https://dash.plotly.com/dash-html-components/span">html.Span</a><a class="" href="https://dash.plotly.com/dash-html-components/strike">html.Strike</a><a class="" href="https://dash.plotly.com/dash-html-components/strong">html.Strong</a><a class="" href="https://dash.plotly.com/dash-html-components/sub">html.Sub</a><a class="" href="https://dash.plotly.com/dash-html-components/summary">html.Summary</a><a class="" href="https://dash.plotly.com/dash-html-components/sup">html.Sup</a><a class="" href="https://dash.plotly.com/dash-html-components/table">html.Table</a><a class="" href="https://dash.plotly.com/dash-html-components/tbody">html.Tbody</a><a class="" href="https://dash.plotly.com/dash-html-components/td">html.Td</a><a class="" href="https://dash.plotly.com/dash-html-components/template">html.Template</a><a class="" href="https://dash.plotly.com/dash-html-components/textarea">html.Textarea</a><a class="" href="https://dash.plotly.com/dash-html-components/tfoot">html.Tfoot</a><a class="" href="https://dash.plotly.com/dash-html-components/th">html.Th</a><a class="" href="https://dash.plotly.com/dash-html-components/thead">html.Thead</a><a class="" href="https://dash.plotly.com/dash-html-components/time">html.Time</a><a class="" href="https://dash.plotly.com/dash-html-components/title">html.Title</a><a class="" href="https://dash.plotly.com/dash-html-components/tr">html.Tr</a><a class="" href="https://dash.plotly.com/dash-html-components/track">html.Track</a><a class="" href="https://dash.plotly.com/dash-html-components/u">html.U</a><a class="" href="https://dash.plotly.com/dash-html-components/ul">html.Ul</a><a class="" href="https://dash.plotly.com/dash-html-components/var">html.Var</a><a class="" href="https://dash.plotly.com/dash-html-components/video">html.Video</a><a class="" href="https://dash.plotly.com/dash-html-components/wbr">html.Wbr</a><a class="" href="https://dash.plotly.com/dash-html-components/xmp">html.Xmp</a></div></details><details><summary>Dash DataTable</summary><div class="sidebar--2"><a class="" href="https://dash.plotly.com/datatable">Overview</a><a class="" href="https://dash.plotly.com/datatable/reference">Reference</a><a class="" href="https://dash.plotly.com/datatable/sizing">Sizing</a><a class="" href="https://dash.plotly.com/datatable/style">Styling</a><a class="" href="https://dash.plotly.com/datatable/interactivity">Sorting, Filtering, Selecting, and Paging Natively</a><a class="" href="https://dash.plotly.com/datatable/callbacks">Python-Driven Filtering, Paging, Sorting</a><a class="" href="https://dash.plotly.com/datatable/editable">Editable DataTable</a><a class="" href="https://dash.plotly.com/datatable/typing">Typing and User Input Processing</a><a class="" href="https://dash.plotly.com/datatable/dropdowns">Dropdowns Inside DataTable</a><a class="" href="https://dash.plotly.com/datatable/virtualization">Virtualization</a><a class="" href="https://dash.plotly.com/datatable/filtering">Filtering Syntax</a></div></details><details><summary>Dash Bio</summary><div class="sidebar--2"><a class="" href="https://dash.plotly.com/dash-bio">Overview</a><a class="" href="https://dash.plotly.com/dash-bio/alignmentchart">dash_bio.AlignmentChart</a><a class="" href="https://dash.plotly.com/dash-bio/circos">dash_bio.Circos</a><a class="" href="https://dash.plotly.com/dash-bio/clustergram">dash_bio.Clustergram</a><a class="" href="https://dash.plotly.com/dash-bio/fornacontainer">dash_bio.FornaContainer</a><a class="" href="https://dash.plotly.com/dash-bio/ideogram">dash_bio.Ideogram</a><a class="" href="https://dash.plotly.com/dash-bio/manhattanplot">dash_bio.ManhattanPlot</a><a class="" href="https://dash.plotly.com/dash-bio/molecule2dviewer">dash_bio.Molecule2dViewer</a><a class="" href="https://dash.plotly.com/dash-bio/molecule3dviewer">dash_bio.Molecule3dViewer</a><a class="" href="https://dash.plotly.com/dash-bio/needleplot">dash_bio.NeedlePlot</a><a class="" href="https://dash.plotly.com/dash-bio/oncoprint">dash_bio.OncoPrint</a><a class="" href="https://dash.plotly.com/dash-bio/sequenceviewer">dash_bio.SequenceViewer</a><a class="" href="https://dash.plotly.com/dash-bio/speck">dash_bio.Speck</a><a class="" href="https://dash.plotly.com/dash-bio/volcanoplot">dash_bio.VolcanoPlot</a></div></details><details><summary>Dash DAQ</summary><div class="sidebar--2"><a class="" href="https://dash.plotly.com/dash-daq">Overview</a><a class="" href="https://dash.plotly.com/dash-daq/booleanswitch">dash_daq.BooleanSwitch</a><a class="" href="https://dash.plotly.com/dash-daq/colorpicker">dash_daq.ColorPicker</a><a class="" href="https://dash.plotly.com/dash-daq/darkthemeprovider">dash_daq.DarkThemeProvider</a><a class="" href="https://dash.plotly.com/dash-daq/gauge">dash_daq.Gauge</a><a class="" href="https://dash.plotly.com/dash-daq/graduatedbar">dash_daq.GraduatedBar</a><a class="" href="https://dash.plotly.com/dash-daq/indicator">dash_daq.Indicator</a><a class="" href="https://dash.plotly.com/dash-daq/joystick">dash_daq.Joystick</a><a class="" href="https://dash.plotly.com/dash-daq/knob">dash_daq.Knob</a><a class="" href="https://dash.plotly.com/dash-daq/leddisplay">dash_daq.LEDDisplay</a><a class="" href="https://dash.plotly.com/dash-daq/numericinput">dash_daq.NumericInput</a><a class="" href="https://dash.plotly.com/dash-daq/powerbutton">dash_daq.PowerButton</a><a class="" href="https://dash.plotly.com/dash-daq/precisioninput">dash_daq.PrecisionInput</a><a class="" href="https://dash.plotly.com/dash-daq/slider">dash_daq.Slider</a><a class="" href="https://dash.plotly.com/dash-daq/stopbutton">dash_daq.StopButton</a><a class="" href="https://dash.plotly.com/dash-daq/tank">dash_daq.Tank</a><a class="" href="https://dash.plotly.com/dash-daq/thermometer">dash_daq.Thermometer</a><a class="" href="https://dash.plotly.com/dash-daq/toggleswitch">dash_daq.ToggleSwitch</a></div></details><details><summary>Dash Canvas</summary><div class="sidebar--2"><a class="" href="https://dash.plotly.com/canvas">Overview &amp; Reference</a></div></details><details open=""><summary>Dash Cytoscape</summary><div class="sidebar--2"><a class="" href="https://dash.plotly.com/cytoscape">Overview</a><a class="" href="https://dash.plotly.com/cytoscape/elements">Basic Usage &amp; Elements</a><a class="" href="https://dash.plotly.com/cytoscape/layout">Layouts</a><a class="" href="https://dash.plotly.com/cytoscape/styling">Styling</a><a class="" href="https://dash.plotly.com/cytoscape/callbacks">Callbacks</a><a class="active" href="https://dash.plotly.com/cytoscape/events">User Interactions</a><a class="" href="https://dash.plotly.com/cytoscape/biopython">Biopython Examples</a><a class="" href="https://dash.plotly.com/cytoscape/reference">Reference</a></div></details></div></details><details><summary>Creating Your Own Components</summary><div class="sidebar--1"><a class="" href="https://dash.plotly.com/react-for-python-developers">React for Python Developers</a><a class="" href="https://dash.plotly.com/plugins">Build Your Own Components</a><a class="" href="https://dash.plotly.com/d3-react-components">Integrating D3.js into Dash Components</a></div></details><details><summary>Beyond the Basics</summary><div class="sidebar--1"><a class="" href="https://dash.plotly.com/performance">Performance</a><a class="" href="https://dash.plotly.com/live-updates">Live Updates</a><a class="" href="https://dash.plotly.com/external-resources">Adding CSS &amp; JS and Overriding the Page-Load Template</a><a class="" href="https://dash.plotly.com/urls">URL Routing and Multiple Apps</a><a class="" href="https://dash.plotly.com/persistence">Persisting User Preferences &amp; Control Values</a><a class="" href="https://dash.plotly.com/devtools">Dev tools</a><a class="" href="https://dash.plotly.com/loading-states">Loading States</a><a class="" href="https://dash.plotly.com/testing">Dash Testing</a></div></details><details><summary>Production</summary><div class="sidebar--1"><a class="" href="https://dash.plotly.com/authentication">Authentication</a><a class="" href="https://dash.plotly.com/deployment">Deployment</a><a class="" href="https://dash.plotly.com/integrating-dash">Integrating Dash with Existing Web Apps</a></div></details><details><summary>Getting Help</summary><div class="sidebar--1"><a href="https://community.plotly.com/c/dash" class="">The Dash Community Forum</a><a class="" href="https://dash.plotly.com/support">Support and Contact</a></div></details><details><summary>Dash Enterprise</summary><div class="sidebar--1"><a href="https://plotly.com/dash/" class="">About Dash Enterprise</a><details><summary>Dash Enterprise Documentation</summary><div class="sidebar--2"><a class="" href="https://dash.plotly.com/dash-enterprise">Overview</a><a class="" href="https://dash.plotly.com/dash-enterprise/initialize">Part 1. Initialize Dash Apps on Dash Enterprise</a><a class="" href="https://dash.plotly.com/dash-enterprise/deployment">Part 2. Deploy Dash Apps on Dash Enterprise</a><a class="" href="https://dash.plotly.com/dash-enterprise/application-structure">Application Structure</a><a class="" href="https://dash.plotly.com/dash-enterprise/static-assets">Adding Static Assets</a><a class="" href="https://dash.plotly.com/dash-enterprise/configure-system-dependencies">Configuring System Dependencie</a><a class="" href="https://dash.plotly.com/dash-enterprise/portal">Dash App Portal</a><a class="" href="https://dash.plotly.com/dash-enterprise/admin-panel">Admin Panel</a><a class="" href="https://dash.plotly.com/dash-enterprise/privacy">Dash App Privacy</a><a class="" href="https://dash.plotly.com/dash-enterprise/redis-database">Linking a Redis Database</a><a class="" href="https://dash.plotly.com/dash-enterprise/environment-variables">Setting Enviornment Variables</a><a class="" href="https://dash.plotly.com/dash-enterprise/map-local-directories">Mapping Local Directories</a><a class="" href="https://dash.plotly.com/dash-enterprise/ssh">Authenticating to Dash Enterprise with SSH</a><a class="" href="https://dash.plotly.com/dash-enterprise/cli">Managing Dash Apps via the Command Line</a><a class="" href="https://dash.plotly.com/dash-enterprise/app-authentication">Dash Enterprise Auth Features</a><a class="" href="https://dash.plotly.com/dash-enterprise/checks">Dash Enterprise App Health Checks</a><a class="" href="https://dash.plotly.com/dash-enterprise/private-packages">Adding Private Python Packages</a><a class="" href="https://dash.plotly.com/dash-enterprise/celery-process">Linking a Celery Process</a><a class="" href="https://dash.plotly.com/dash-enterprise/staging-app">Create a Staging Dash App </a><a class="" href="https://dash.plotly.com/dash-enterprise/pdf-service">Dash Enterprise PDF Service</a><a class="" href="https://dash.plotly.com/dash-enterprise/analytics">App Analytics</a><a class="" href="https://dash.plotly.com/dash-enterprise/logs">App Logs</a><a class="" href="https://dash.plotly.com/dash-enterprise/troubleshooting">Common Errors</a><a class="" href="https://dash.plotly.com/dash-enterprise/support">Support</a><a class="" href="https://dash.plotly.com/dash-enterprise/git">Advanced Git</a></div></details></div></details></div></div><div class="rhs-content container-width"><div id="backlinks-top" class="backlinks" style="border-bottom: thin solid lightgrey;"><a href="https://dash.plotly.com/">Home</a><span> &gt; </span><a href="https://dash.plotly.com/cytoscape">Dash Cytoscape</a><span> &gt; User Interactions</span></div><div class="content-container"><div id="chapter" class="content"><div><div><h1 id="cytoscape-event-callbacks">Cytoscape Event Callbacks</h1><p>In <a href="https://dash.plotly.com/cytoscape/callbacks">part 4</a>, we showed how to update Cytoscape with
+other components by assigning callbacks that output to <code>'elements',
+'stylesheet', 'layout'</code>. Moreover, it is also possible to use properties
+of Cytoscape as an input to callbacks, which can be used to update other
+components, or Cytoscape itself. Those properties are updated (which fires
+the callbacks) when the user interact with elements in a certain way,
+which justifies the name of event callbacks. You can find props such as
+<code>tapNode</code>, which returns a complete description of the node object when
+the user clicks or taps on a node, <code>mouseoverEdgeData</code>, which returns only
+the data dictionary of the edge that was most recently hovered by the user.
+The complete list can be found in the <a href="https://dash.plotly.com/cytoscape/reference">Dash Cytoscape Reference</a>.</p><h2 id="simple-callback-construction">Simple callback construction</h2><p>Let's look back at the same city example as the previous chapter:</p></div><div><div style="margin-bottom: 10px; border-left: thin solid rgb(200, 212, 227);"><pre><code class="language-python hljs">cyto.Cytoscape(
+    id=<span class="hljs-string">'cytoscape-events'</span>,
+    layout={<span class="hljs-string">'name'</span>: <span class="hljs-string">'preset'</span>},
+    elements=edges+nodes,
+    stylesheet=default_stylesheet,
+    style={<span class="hljs-string">'width'</span>: <span class="hljs-string">'100%'</span>, <span class="hljs-string">'height'</span>: <span class="hljs-string">'450px'</span>}
+)</code></pre></div><div id="cytoscape-events" class=" __________cytoscape_container" style="width: 100%; height: 450px;-webkit-tap-highlight-color: rgba(0,0,0,0);"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative; z-index: 0; overflow: hidden; width: 800px; height: 450px;"><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 3; width: 800px; height: 450px;" data-id="layer0-selectbox" width="1200" height="675"></canvas><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 2; width: 800px; height: 450px;" data-id="layer1-drag" width="1200" height="675"></canvas><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 1; width: 800px; height: 450px;" data-id="layer2-node" width="1200" height="675"></canvas></div></div></div><div><p>This time, we will use the <code>tapNodeData</code> properties as input
+to our callbacks, which will simply dump the content into an <code>html.Pre</code>:</p></div><div style="border-left: thin solid rgb(200, 212, 227);"><pre><code class="language-python hljs"><span class="hljs-keyword">import</span> json
+
+<span class="hljs-keyword">import</span> dash
+<span class="hljs-keyword">import</span> dash_cytoscape <span class="hljs-keyword">as</span> cyto
+<span class="hljs-keyword">import</span> dash_html_components <span class="hljs-keyword">as</span> html
+<span class="hljs-keyword">import</span> dash_core_components <span class="hljs-keyword">as</span> dcc
+<span class="hljs-keyword">from</span> dash.dependencies <span class="hljs-keyword">import</span> Input, Output
+
+app = dash.Dash(__name__)
+
+styles = {
+    <span class="hljs-string">'pre'</span>: {
+        <span class="hljs-string">'border'</span>: <span class="hljs-string">'thin lightgrey solid'</span>,
+        <span class="hljs-string">'overflowX'</span>: <span class="hljs-string">'scroll'</span>
+    }
+}
+
+
+nodes = [
+    {
+        <span class="hljs-string">'data'</span>: {<span class="hljs-string">'id'</span>: short, <span class="hljs-string">'label'</span>: label},
+        <span class="hljs-string">'position'</span>: {<span class="hljs-string">'x'</span>: <span class="hljs-number">20</span>*lat, <span class="hljs-string">'y'</span>: <span class="hljs-number">-20</span>*long}
+    }
+    <span class="hljs-keyword">for</span> short, label, long, lat <span class="hljs-keyword">in</span> (
+        (<span class="hljs-string">'la'</span>, <span class="hljs-string">'Los Angeles'</span>, <span class="hljs-number">34.03</span>, <span class="hljs-number">-118.25</span>),
+        (<span class="hljs-string">'nyc'</span>, <span class="hljs-string">'New York'</span>, <span class="hljs-number">40.71</span>, <span class="hljs-number">-74</span>),
+        (<span class="hljs-string">'to'</span>, <span class="hljs-string">'Toronto'</span>, <span class="hljs-number">43.65</span>, <span class="hljs-number">-79.38</span>),
+        (<span class="hljs-string">'mtl'</span>, <span class="hljs-string">'Montreal'</span>, <span class="hljs-number">45.50</span>, <span class="hljs-number">-73.57</span>),
+        (<span class="hljs-string">'van'</span>, <span class="hljs-string">'Vancouver'</span>, <span class="hljs-number">49.28</span>, <span class="hljs-number">-123.12</span>),
+        (<span class="hljs-string">'chi'</span>, <span class="hljs-string">'Chicago'</span>, <span class="hljs-number">41.88</span>, <span class="hljs-number">-87.63</span>),
+        (<span class="hljs-string">'bos'</span>, <span class="hljs-string">'Boston'</span>, <span class="hljs-number">42.36</span>, <span class="hljs-number">-71.06</span>),
+        (<span class="hljs-string">'hou'</span>, <span class="hljs-string">'Houston'</span>, <span class="hljs-number">29.76</span>, <span class="hljs-number">-95.37</span>)
+    )
+]
+
+edges = [
+    {<span class="hljs-string">'data'</span>: {<span class="hljs-string">'source'</span>: source, <span class="hljs-string">'target'</span>: target}}
+    <span class="hljs-keyword">for</span> source, target <span class="hljs-keyword">in</span> (
+        (<span class="hljs-string">'van'</span>, <span class="hljs-string">'la'</span>),
+        (<span class="hljs-string">'la'</span>, <span class="hljs-string">'chi'</span>),
+        (<span class="hljs-string">'hou'</span>, <span class="hljs-string">'chi'</span>),
+        (<span class="hljs-string">'to'</span>, <span class="hljs-string">'mtl'</span>),
+        (<span class="hljs-string">'mtl'</span>, <span class="hljs-string">'bos'</span>),
+        (<span class="hljs-string">'nyc'</span>, <span class="hljs-string">'bos'</span>),
+        (<span class="hljs-string">'to'</span>, <span class="hljs-string">'hou'</span>),
+        (<span class="hljs-string">'to'</span>, <span class="hljs-string">'nyc'</span>),
+        (<span class="hljs-string">'la'</span>, <span class="hljs-string">'nyc'</span>),
+        (<span class="hljs-string">'nyc'</span>, <span class="hljs-string">'bos'</span>)
+    )
+]
+
+
+default_stylesheet = [
+    {
+        <span class="hljs-string">'selector'</span>: <span class="hljs-string">'node'</span>,
+        <span class="hljs-string">'style'</span>: {
+            <span class="hljs-string">'background-color'</span>: <span class="hljs-string">'#BFD7B5'</span>,
+            <span class="hljs-string">'label'</span>: <span class="hljs-string">'data(label)'</span>
+        }
+    }
+]
+
+
+app.layout = html.Div([
+    cyto.Cytoscape(
+        id=<span class="hljs-string">'cytoscape-event-callbacks-1'</span>,
+        layout={<span class="hljs-string">'name'</span>: <span class="hljs-string">'preset'</span>},
+        elements=edges+nodes,
+        stylesheet=default_stylesheet,
+        style={<span class="hljs-string">'width'</span>: <span class="hljs-string">'100%'</span>, <span class="hljs-string">'height'</span>: <span class="hljs-string">'450px'</span>}
+    ),
+    html.Pre(id=<span class="hljs-string">'cytoscape-tapNodeData-json'</span>, style=styles[<span class="hljs-string">'pre'</span>])
+])
+
+
+<span class="hljs-meta">@app.callback(Output('cytoscape-tapNodeData-json', 'children'),</span>
+              [Input(<span class="hljs-string">'cytoscape-event-callbacks-1'</span>, <span class="hljs-string">'tapNodeData'</span>)])
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">displayTapNodeData</span><span class="hljs-params">(data)</span>:</span>
+    <span class="hljs-keyword">return</span> json.dumps(data, indent=<span class="hljs-number">2</span>)
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:
+    app.run_server(debug=<span class="hljs-literal">True</span>)</code></pre></div><div class="example-container"><div><div id="cytoscape-event-callbacks-1" class=" __________cytoscape_container" style="width: 100%; height: 450px;-webkit-tap-highlight-color: rgba(0,0,0,0);"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative; z-index: 0; overflow: hidden; width: 769px; height: 450px;"><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 3; width: 769px; height: 450px;" data-id="layer0-selectbox" width="1153" height="675"></canvas><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 2; width: 769px; height: 450px;" data-id="layer1-drag" width="1153" height="675"></canvas><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 1; width: 769px; height: 450px;" data-id="layer2-node" width="1153" height="675"></canvas></div></div><pre id="cytoscape-tapNodeData-json" style="border: thin solid lightgrey; overflow-x: scroll;">null</pre></div></div><div><p>Notice that the <code>html.Div</code> is updated every time you click or tap a node,
+and returns the data dictionary of the node. Alternatively, you can use
+<code>tapNode</code> to obtain the entire element specification (given as a
+dictionary), rather than just its <code>data</code>.</p><h2 id="click,-tap-and-hover">Click, tap and hover</h2><p>Let's now display the data generated whenever you click or hover over a node
+or an edge. Simply replace the previous layout and callbacks by this:</p></div><div style="border-left: thin solid rgb(200, 212, 227);"><pre><code class="language-py hljs python">    app.layout = html.Div([
+        cyto.Cytoscape(
+            id=<span class="hljs-string">'cytoscape-event-callbacks-2'</span>,
+            layout={<span class="hljs-string">'name'</span>: <span class="hljs-string">'preset'</span>},
+            elements=edges+nodes,
+            stylesheet=default_stylesheet,
+            style={<span class="hljs-string">'width'</span>: <span class="hljs-string">'100%'</span>, <span class="hljs-string">'height'</span>: <span class="hljs-string">'450px'</span>}
+        ),
+        html.P(id=<span class="hljs-string">'cytoscape-tapNodeData-output'</span>),
+        html.P(id=<span class="hljs-string">'cytoscape-tapEdgeData-output'</span>),
+        html.P(id=<span class="hljs-string">'cytoscape-mouseoverNodeData-output'</span>),
+        html.P(id=<span class="hljs-string">'cytoscape-mouseoverEdgeData-output'</span>)
+    ])
+
+
+<span class="hljs-meta">    @app.callback(Output('cytoscape-tapNodeData-output', 'children'),</span>
+                  [Input(<span class="hljs-string">'cytoscape-event-callbacks-2'</span>, <span class="hljs-string">'tapNodeData'</span>)])
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">displayTapNodeData</span><span class="hljs-params">(data)</span>:</span>
+        <span class="hljs-keyword">if</span> data:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"You recently clicked/tapped the city: "</span> + data[<span class="hljs-string">'label'</span>]
+
+
+<span class="hljs-meta">    @app.callback(Output('cytoscape-tapEdgeData-output', 'children'),</span>
+                  [Input(<span class="hljs-string">'cytoscape-event-callbacks-2'</span>, <span class="hljs-string">'tapEdgeData'</span>)])
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">displayTapEdgeData</span><span class="hljs-params">(data)</span>:</span>
+        <span class="hljs-keyword">if</span> data:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"You recently clicked/tapped the edge between "</span> + data[<span class="hljs-string">'source'</span>].upper() + <span class="hljs-string">" and "</span> + data[<span class="hljs-string">'target'</span>].upper()
+
+
+<span class="hljs-meta">    @app.callback(Output('cytoscape-mouseoverNodeData-output', 'children'),</span>
+                  [Input(<span class="hljs-string">'cytoscape-event-callbacks-2'</span>, <span class="hljs-string">'mouseoverNodeData'</span>)])
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">displayTapNodeData</span><span class="hljs-params">(data)</span>:</span>
+        <span class="hljs-keyword">if</span> data:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"You recently hovered over the city: "</span> + data[<span class="hljs-string">'label'</span>]
+
+
+<span class="hljs-meta">    @app.callback(Output('cytoscape-mouseoverEdgeData-output', 'children'),</span>
+                  [Input(<span class="hljs-string">'cytoscape-event-callbacks-2'</span>, <span class="hljs-string">'mouseoverEdgeData'</span>)])
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">displayTapEdgeData</span><span class="hljs-params">(data)</span>:</span>
+        <span class="hljs-keyword">if</span> data:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"You recently hovered over the edge between "</span> + data[<span class="hljs-string">'source'</span>].upper() + <span class="hljs-string">" and "</span> + data[<span class="hljs-string">'target'</span>].upper()</code></pre></div><div class="example-container"><div><div id="cytoscape-event-callbacks-2" class=" __________cytoscape_container" style="width: 100%; height: 450px;-webkit-tap-highlight-color: rgba(0,0,0,0);"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative; z-index: 0; overflow: hidden; width: 769px; height: 450px;"><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 3; width: 769px; height: 450px;" data-id="layer0-selectbox" width="1153" height="675"></canvas><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 2; width: 769px; height: 450px;" data-id="layer1-drag" width="1153" height="675"></canvas><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 1; width: 769px; height: 450px;" data-id="layer2-node" width="1153" height="675"></canvas></div></div><p id="cytoscape-tapNodeData-output"></p><p id="cytoscape-tapEdgeData-output"></p><p id="cytoscape-mouseoverNodeData-output"></p><p id="cytoscape-mouseoverEdgeData-output"></p></div></div><div><h2 id="selecting-multiple-elements">Selecting multiple elements</h2><p>Additionally, you can also display all the data currently selected, either
+through a box selection (Shift+Click and drag) or by individually selecting
+multiple elements while holding Shift:</p></div><div style="border-left: thin solid rgb(200, 212, 227);"><pre><code class="language-py hljs python">    app.layout = html.Div([
+        cyto.Cytoscape(
+            id=<span class="hljs-string">'cytoscape-event-callbacks-3'</span>,
+            layout={<span class="hljs-string">'name'</span>: <span class="hljs-string">'preset'</span>},
+            elements=edges+nodes,
+            stylesheet=default_stylesheet,
+            style={<span class="hljs-string">'width'</span>: <span class="hljs-string">'100%'</span>, <span class="hljs-string">'height'</span>: <span class="hljs-string">'450px'</span>}
+        ),
+        rc.Markdown(id=<span class="hljs-string">'cytoscape-selectedNodeData-markdown'</span>)
+    ])
+
+
+<span class="hljs-meta">    @app.callback(Output('cytoscape-selectedNodeData-markdown', 'children'),</span>
+                  [Input(<span class="hljs-string">'cytoscape-event-callbacks-3'</span>, <span class="hljs-string">'selectedNodeData'</span>)])
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">displaySelectedNodeData</span><span class="hljs-params">(data_list)</span>:</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> data_list:
+            <span class="hljs-keyword">return</span>
+
+        cities_list = [data[<span class="hljs-string">'label'</span>] <span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> data_list]
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"You selected the following cities: "</span> + <span class="hljs-string">"\n* "</span>.join(cities_list)</code></pre></div><div class="example-container"><div><div id="cytoscape-event-callbacks-3" class=" __________cytoscape_container" style="width: 100%; height: 450px;-webkit-tap-highlight-color: rgba(0,0,0,0);"><div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative; z-index: 0; overflow: hidden; width: 769px; height: 450px;"><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 3; width: 769px; height: 450px;" data-id="layer0-selectbox" width="1153" height="675"></canvas><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 2; width: 769px; height: 450px;" data-id="layer1-drag" width="1153" height="675"></canvas><canvas style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 1; width: 769px; height: 450px;" data-id="layer2-node" width="1153" height="675"></canvas></div></div><div id="cytoscape-selectedNodeData-markdown"><p>No city selected.</p></div></div></div><div><h2 id="advanced-usage-of-callbacks">Advanced usage of callbacks</h2><p>Those event callbacks enable more advanced interactions between components.
+In fact, you can even use them to update other <code>Cytoscape</code> arguments. The
+<a href="https://github.com/plotly/dash-cytoscape/blob/master/usage-stylesheet.py"><code>usage-stylesheet.py</code></a>
+example (hosted on the <code>dash-cytoscape</code> Github repo) lets you click to change the
+color of a node to purple, its targeted
+nodes to red, and its incoming nodes to blue. All of this is done using a
+single callback function, which takes as input the <code>tapNode</code> prop of the
+<code>Cytoscape</code> component along with a few dropdowns, and outputs to the
+<code>stylesheet</code> prop. You can try out this
+<a href="https://dash-gallery.plotly.host/cytoscape-stylesheet">interactive stylesheet demo</a>
+hosted on <a href="https://plotly.com/products/dash/">Dash Enterprise</a>.</p></div><details><summary>Expand to see how to interactively style your elements</summary><div style="border-left: thin solid rgb(200, 212, 227);"><pre><code class="language-py hljs python"><span class="hljs-meta">@app.callback(Output('cytoscape', 'stylesheet'),</span>
+              [Input(<span class="hljs-string">'cytoscape'</span>, <span class="hljs-string">'tapNode'</span>),
+               Input(<span class="hljs-string">'input-follower-color'</span>, <span class="hljs-string">'value'</span>),
+               Input(<span class="hljs-string">'input-following-color'</span>, <span class="hljs-string">'value'</span>),
+               Input(<span class="hljs-string">'dropdown-node-shape'</span>, <span class="hljs-string">'value'</span>)])
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">generate_stylesheet</span><span class="hljs-params">(node, follower_color, following_color, node_shape)</span>:</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> node:
+        <span class="hljs-keyword">return</span> default_stylesheet
+
+    stylesheet = [{
+        <span class="hljs-string">"selector"</span>: <span class="hljs-string">'node'</span>,
+        <span class="hljs-string">'style'</span>: {
+            <span class="hljs-string">'opacity'</span>: <span class="hljs-number">0.3</span>,
+            <span class="hljs-string">'shape'</span>: node_shape
+        }
+    }, {
+        <span class="hljs-string">'selector'</span>: <span class="hljs-string">'edge'</span>,
+        <span class="hljs-string">'style'</span>: {
+            <span class="hljs-string">'opacity'</span>: <span class="hljs-number">0.2</span>,
+            <span class="hljs-string">"curve-style"</span>: <span class="hljs-string">"bezier"</span>,
+        }
+    }, {
+        <span class="hljs-string">"selector"</span>: <span class="hljs-string">'node[id = "{}"]'</span>.format(node[<span class="hljs-string">'data'</span>][<span class="hljs-string">'id'</span>]),
+        <span class="hljs-string">"style"</span>: {
+            <span class="hljs-string">'background-color'</span>: <span class="hljs-string">'#B10DC9'</span>,
+            <span class="hljs-string">"border-color"</span>: <span class="hljs-string">"purple"</span>,
+            <span class="hljs-string">"border-width"</span>: <span class="hljs-number">2</span>,
+            <span class="hljs-string">"border-opacity"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"opacity"</span>: <span class="hljs-number">1</span>,
+
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"data(label)"</span>,
+            <span class="hljs-string">"color"</span>: <span class="hljs-string">"#B10DC9"</span>,
+            <span class="hljs-string">"text-opacity"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-string">"font-size"</span>: <span class="hljs-number">12</span>,
+            <span class="hljs-string">'z-index'</span>: <span class="hljs-number">9999</span>
+        }
+    }]
+
+    <span class="hljs-keyword">for</span> edge <span class="hljs-keyword">in</span> node[<span class="hljs-string">'edgesData'</span>]:
+        <span class="hljs-keyword">if</span> edge[<span class="hljs-string">'source'</span>] == node[<span class="hljs-string">'data'</span>][<span class="hljs-string">'id'</span>]:
+            stylesheet.append({
+                <span class="hljs-string">"selector"</span>: <span class="hljs-string">'node[id = "{}"]'</span>.format(edge[<span class="hljs-string">'target'</span>]),
+                <span class="hljs-string">"style"</span>: {
+                    <span class="hljs-string">'background-color'</span>: following_color,
+                    <span class="hljs-string">'opacity'</span>: <span class="hljs-number">0.9</span>
+                }
+            })
+            stylesheet.append({
+                <span class="hljs-string">"selector"</span>: <span class="hljs-string">'edge[id= "{}"]'</span>.format(edge[<span class="hljs-string">'id'</span>]),
+                <span class="hljs-string">"style"</span>: {
+                    <span class="hljs-string">"mid-target-arrow-color"</span>: following_color,
+                    <span class="hljs-string">"mid-target-arrow-shape"</span>: <span class="hljs-string">"vee"</span>,
+                    <span class="hljs-string">"line-color"</span>: following_color,
+                    <span class="hljs-string">'opacity'</span>: <span class="hljs-number">0.9</span>,
+                    <span class="hljs-string">'z-index'</span>: <span class="hljs-number">5000</span>
+                }
+            })
+
+        <span class="hljs-keyword">if</span> edge[<span class="hljs-string">'target'</span>] == node[<span class="hljs-string">'data'</span>][<span class="hljs-string">'id'</span>]:
+            stylesheet.append({
+                <span class="hljs-string">"selector"</span>: <span class="hljs-string">'node[id = "{}"]'</span>.format(edge[<span class="hljs-string">'source'</span>]),
+                <span class="hljs-string">"style"</span>: {
+                    <span class="hljs-string">'background-color'</span>: follower_color,
+                    <span class="hljs-string">'opacity'</span>: <span class="hljs-number">0.9</span>,
+                    <span class="hljs-string">'z-index'</span>: <span class="hljs-number">9999</span>
+                }
+            })
+            stylesheet.append({
+                <span class="hljs-string">"selector"</span>: <span class="hljs-string">'edge[id= "{}"]'</span>.format(edge[<span class="hljs-string">'id'</span>]),
+                <span class="hljs-string">"style"</span>: {
+                    <span class="hljs-string">"mid-target-arrow-color"</span>: follower_color,
+                    <span class="hljs-string">"mid-target-arrow-shape"</span>: <span class="hljs-string">"vee"</span>,
+                    <span class="hljs-string">"line-color"</span>: follower_color,
+                    <span class="hljs-string">'opacity'</span>: <span class="hljs-number">1</span>,
+                    <span class="hljs-string">'z-index'</span>: <span class="hljs-number">5000</span>
+                }
+            })
+
+    <span class="hljs-keyword">return</span> stylesheet</code></pre></div></details><div><p>Additionally, <a href="https://github.com/plotly/dash-cytoscape/blob/master/usage-elements.py"><code>usage-elements.py</code></a>
+lets you progressively expand your graph
+by using <code>tapNodeData</code> as the input and <code>elements</code> as the output.</p><p>The app initially pre-loads the entire dataset, but only loads the graph
+with a single node. It then constructs four dictionaries that maps every
+single node ID to its following nodes, following edges, followers nodes,
+followers edges.</p><p>Then, it lets you expand the incoming or the outgoing
+neighbors by clicking the node you want to expand. This
+is done through a callback that retrieves the followers (outgoing) or following
+(incoming) from the dictionaries, and add the to the <code>elements</code>.
+<a href="https://dash-gallery.plotly.host/cytoscape-elements">Click here for the online demo</a>.</p></div><details><summary>Expand to see how to construct the dictionaries</summary><div style="border-left: thin solid rgb(200, 212, 227);"><pre><code class="language-py hljs python"><span class="hljs-keyword">with</span> open(<span class="hljs-string">'demos/data/sample_network.txt'</span>, <span class="hljs-string">'r'</span>) <span class="hljs-keyword">as</span> f:
+    data = f.read().split(<span class="hljs-string">'\n'</span>)
+
+<span class="hljs-comment"># We select the first 750 edges and associated nodes for an easier visualization</span>
+edges = data[:<span class="hljs-number">750</span>]
+nodes = set()
+
+following_node_di = {}  <span class="hljs-comment"># user id -&gt; list of users they are following</span>
+following_edges_di = {}  <span class="hljs-comment"># user id -&gt; list of cy edges starting from user id</span>
+
+followers_node_di = {}  <span class="hljs-comment"># user id -&gt; list of followers (cy_node format)</span>
+followers_edges_di = {}  <span class="hljs-comment"># user id -&gt; list of cy edges ending at user id</span>
+
+cy_edges = []
+cy_nodes = []
+
+<span class="hljs-keyword">for</span> edge <span class="hljs-keyword">in</span> edges:
+    <span class="hljs-keyword">if</span> <span class="hljs-string">" "</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> edge:
+        <span class="hljs-keyword">continue</span>
+
+    source, target = edge.split(<span class="hljs-string">" "</span>)
+
+    cy_edge = {<span class="hljs-string">'data'</span>: {<span class="hljs-string">'id'</span>: source+target, <span class="hljs-string">'source'</span>: source, <span class="hljs-string">'target'</span>: target}}
+    cy_target = {<span class="hljs-string">"data"</span>: {<span class="hljs-string">"id"</span>: target, <span class="hljs-string">"label"</span>: <span class="hljs-string">"User #"</span> + str(target[<span class="hljs-number">-5</span>:])}}
+    cy_source = {<span class="hljs-string">"data"</span>: {<span class="hljs-string">"id"</span>: source, <span class="hljs-string">"label"</span>: <span class="hljs-string">"User #"</span> + str(source[<span class="hljs-number">-5</span>:])}}
+
+    <span class="hljs-keyword">if</span> source <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> nodes:
+        nodes.add(source)
+        cy_nodes.append(cy_source)
+    <span class="hljs-keyword">if</span> target <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> nodes:
+        nodes.add(target)
+        cy_nodes.append(cy_target)
+
+    <span class="hljs-comment"># Process dictionary of following</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> following_node_di.get(source):
+        following_node_di[source] = []
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> following_edges_di.get(source):
+        following_edges_di[source] = []
+
+    following_node_di[source].append(cy_target)
+    following_edges_di[source].append(cy_edge)
+
+    <span class="hljs-comment"># Process dictionary of followers</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> followers_node_di.get(target):
+        followers_node_di[target] = []
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> followers_edges_di.get(target):
+        followers_edges_di[target] = []
+
+    followers_node_di[target].append(cy_source)
+    followers_edges_di[target].append(cy_edge)</code></pre></div></details><details><summary>Expand to see how to generate elements</summary><div style="border-left: thin solid rgb(200, 212, 227);"><pre><code class="language-py hljs python"><span class="hljs-meta">@app.callback(Output('cytoscape', 'elements'),</span>
+              [Input(<span class="hljs-string">'cytoscape'</span>, <span class="hljs-string">'tapNodeData'</span>)],
+              [State(<span class="hljs-string">'cytoscape'</span>, <span class="hljs-string">'elements'</span>),
+               State(<span class="hljs-string">'radio-expand'</span>, <span class="hljs-string">'value'</span>)])
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">generate_elements</span><span class="hljs-params">(nodeData, elements, expansion_mode)</span>:</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> nodeData:
+        <span class="hljs-keyword">return</span> default_elements
+
+    <span class="hljs-comment"># If the node has already been expanded, we don't expand it again</span>
+    <span class="hljs-keyword">if</span> nodeData.get(<span class="hljs-string">'expanded'</span>):
+        <span class="hljs-keyword">return</span> elements
+
+    <span class="hljs-comment"># This retrieves the currently selected element, and tag it as expanded</span>
+    <span class="hljs-keyword">for</span> element <span class="hljs-keyword">in</span> elements:
+        <span class="hljs-keyword">if</span> nodeData[<span class="hljs-string">'id'</span>] == element.get(<span class="hljs-string">'data'</span>).get(<span class="hljs-string">'id'</span>):
+            element[<span class="hljs-string">'data'</span>][<span class="hljs-string">'expanded'</span>] = <span class="hljs-literal">True</span>
+            <span class="hljs-keyword">break</span>
+
+    <span class="hljs-keyword">if</span> expansion_mode == <span class="hljs-string">'followers'</span>:
+
+        followers_nodes = followers_node_di.get(nodeData[<span class="hljs-string">'id'</span>])
+        followers_edges = followers_edges_di.get(nodeData[<span class="hljs-string">'id'</span>])
+
+        <span class="hljs-keyword">if</span> followers_nodes:
+            <span class="hljs-keyword">for</span> node <span class="hljs-keyword">in</span> followers_nodes:
+                node[<span class="hljs-string">'classes'</span>] = <span class="hljs-string">'followerNode'</span>
+            elements.extend(followers_nodes)
+
+        <span class="hljs-keyword">if</span> followers_edges:
+            <span class="hljs-keyword">for</span> edge <span class="hljs-keyword">in</span> followers_edges:
+                edge[<span class="hljs-string">'classes'</span>] = <span class="hljs-string">'followerEdge'</span>
+            elements.extend(followers_edges)
+
+    <span class="hljs-keyword">elif</span> expansion_mode == <span class="hljs-string">'following'</span>:
+
+        following_nodes = following_node_di.get(nodeData[<span class="hljs-string">'id'</span>])
+        following_edges = following_edges_di.get(nodeData[<span class="hljs-string">'id'</span>])
+
+        <span class="hljs-keyword">if</span> following_nodes:
+            <span class="hljs-keyword">for</span> node <span class="hljs-keyword">in</span> following_nodes:
+                <span class="hljs-keyword">if</span> node[<span class="hljs-string">'data'</span>][<span class="hljs-string">'id'</span>] != genesis_node[<span class="hljs-string">'data'</span>][<span class="hljs-string">'id'</span>]:
+                    node[<span class="hljs-string">'classes'</span>] = <span class="hljs-string">'followingNode'</span>
+                    elements.append(node)
+
+        <span class="hljs-keyword">if</span> following_edges:
+            <span class="hljs-keyword">for</span> edge <span class="hljs-keyword">in</span> following_edges:
+                edge[<span class="hljs-string">'classes'</span>] = <span class="hljs-string">'followingEdge'</span>
+            elements.extend(following_edges)
+
+    <span class="hljs-keyword">return</span> elements</code></pre></div></details><div><p>To see more examples of events, check out the <a href="https://dash-gallery.plotly.host/cytoscape-events">event callbacks demo</a>
+(the source file is available as <a href="https://github.com/plotly/dash-cytoscape/blob/master/usage-events.py"><code>usage-events.py</code></a> on the project repo)
+and the <a href="https://dash.plotly.com/cytoscape/reference">Cytoscape references</a>.</p></div></div><div id="wait-for-page-/cytoscape/events"></div></div></div><div id="backlinks-bottom" class="backlinks"><a href="https://dash.plotly.com/">Home</a><span> &gt; </span><a href="https://dash.plotly.com/cytoscape">Dash Cytoscape</a><span> &gt; User Interactions</span></div></div><div id="pagemenu" class="page-menu cytoscapeevents"><div class="page-menu--header">On This Page</div><div id="page-menu--links">
+                    <div class="page-menu--link-parent">
+                        <span id="page-menu--link-0" class="page-menu--link" onclick="pageMenuScroll(&#39;cytoscape-event-callbacks&#39;)">
+                            Cytoscape Event Callbacks
+                        </span>
+                    </div>
+                
+                    <div class="page-menu--link-parent">
+                        <span id="page-menu--link-1" class="page-menu--link" onclick="pageMenuScroll(&#39;simple-callback-construction&#39;)">
+                            Simple callback construction
+                        </span>
+                    </div>
+                
+                    <div class="page-menu--link-parent">
+                        <span id="page-menu--link-2" class="page-menu--link" onclick="pageMenuScroll(&#39;click,-tap-and-hover&#39;)">
+                            Click, tap and hover
+                        </span>
+                    </div>
+                
+                    <div class="page-menu--link-parent">
+                        <span id="page-menu--link-3" class="page-menu--link" onclick="pageMenuScroll(&#39;selecting-multiple-elements&#39;)">
+                            Selecting multiple elements
+                        </span>
+                    </div>
+                
+                    <div class="page-menu--link-parent">
+                        <span id="page-menu--link-4" class="page-menu--link" onclick="pageMenuScroll(&#39;advanced-usage-of-callbacks&#39;)">
+                            Advanced usage of callbacks
+                        </span>
+                    </div>
+                </div></div></div></div></div>
+
+                <footer>
+                    <script id="_dash-config" type="application/json">{"url_base_pathname": null, "requests_pathname_prefix": "/", "ui": false, "props_check": false, "show_undo_redo": false}</script>
+                    <script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/polyfill@7.v1_3_0m1586016097.8.7.min.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/react@16.v1_3_0m1586016097.13.0.min.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/react-dom@16.v1_3_0m1586016097.13.0.min.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/prop-types@15.v1_3_0m1586016097.7.2.min.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/dash_html_components.v1_0_3m1586016098.min.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/dash_user_guide_components.v0_0_3m1586016122.min.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/dash_core_components.v1_9_0m1586016098.min.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/dash_core_components-shared.v1_9_0m1586016098.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/bundle.v0_4_8m1586016115.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/dash_cytoscape.v0_0_5m1586016121.min.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/bundle.v4_6_2m1586016098.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/dash_canvas.v0_1_0m1586016121.min.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/dash_daq.v0_4_0m1586016121.min.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/clientside_example.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/instantsearch.min.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/pagemenu.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/scroll.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/search.js.download"></script>
+<script src="./User Interactions _ Dash for Python Documentation _ Plotly_files/dash_renderer.v1_3_0m1586016097.min.js.download"></script>
+<script>
+                var clientside = window.dash_clientside = window.dash_clientside || {};
+                var ns = clientside["_dashprivate_clientside-graph"] = clientside["_dashprivate_clientside-graph"] || {};
+                ns["figure"] = 
+    function(data, scale) {
+        return {
+            'data': data,
+            'layout': {
+                 'yaxis': {'type': scale}
+             }
+        }
+    }
+    ;
+                </script>
+<script>
+                var clientside = window.dash_clientside = window.dash_clientside || {};
+                var ns = clientside["_dashprivate_clientside-graph-px"] = clientside["_dashprivate_clientside-graph-px"] || {};
+                ns["figure"] = 
+    function(figure, scale) {
+        if(figure === undefined) {
+            return {'data': [], 'layout': {}};
+        }
+        const fig = Object.assign({}, figure, {
+            'layout': {
+                ...figure.layout,
+                'yaxis': {
+                    ...figure.layout.yaxis, type: scale
+                }
+             }
+        });
+        return fig;
+    }
+    ;
+                </script>
+<script>
+                var clientside = window.dash_clientside = window.dash_clientside || {};
+                var ns = clientside["_dashprivate_pagemenu"] = clientside["_dashprivate_pagemenu"] || {};
+                ns["dummy"] = 
+    function(children) {
+        console.warn('updating pagemenu');
+        return '';
+    }
+    ;
+                </script>
+                    <script id="_dash-renderer" type="application/javascript">var renderer = new DashRenderer();</script>
+                </footer>
+            
+        <script type="text/javascript" id="">piAId="720653";piCId="2996";piHostname="pi.pardot.com";(function(){function a(){var b=document.createElement("script");b.type="text/javascript";b.src=("https:"==document.location.protocol?"https://pi":"http://cdn")+".pardot.com/pd.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)}window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,!1)})();</script><script type="text/javascript" id="">(function(d,e,f,b,c,a){c="";b="https://tracking.g2crowd.com/attribution_tracking/conversions/"+d+".js?p\x3d"+encodeURI(e)+"\x26e\x3d"+c;a=document.createElement("script");a.type="application/javascript";a.async=!0;a.src=b;f.getElementsByTagName("head")[0].appendChild(a)})("1772",document.location.href,document);</script><div style="font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: normal; position: absolute; left: -9999px; top: -9999px; z-index: -1; visibility: hidden; pointer-events: none; padding: 0px; line-height: 1; white-space: normal;">Houston</div><div style="font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: normal; position: absolute; left: -9999px; top: -9999px; z-index: -1; visibility: hidden; pointer-events: none; padding: 0px; line-height: 1; white-space: normal;">Houston</div><div style="font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: normal; position: absolute; left: -9999px; top: -9999px; z-index: -1; visibility: hidden; pointer-events: none; padding: 0px; line-height: 1; white-space: normal;">Houston</div><div style="font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: normal; position: absolute; left: -9999px; top: -9999px; z-index: -1; visibility: hidden; pointer-events: none; padding: 0px; line-height: 1; white-space: normal;">Houston</div></body></html>

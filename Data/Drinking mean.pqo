@@ -1,0 +1,51 @@
+   Input file: C:\Users\User\Projects\Multiple use watershed scale FWQI\Data\Drinking mean.csv
+  Output file: C:\Users\User\Projects\Multiple use watershed scale FWQI\Data\Drinking mean.pqo
+Database file: C:\Program Files (x86)\USGS\Phreeqc Interactive 3.6.2-15100\database\phreeqc.dat
+
+------------------
+Reading data base.
+------------------
+
+	SOLUTION_MASTER_SPECIES
+	SOLUTION_SPECIES
+	PHASES
+	EXCHANGE_MASTER_SPECIES
+	EXCHANGE_SPECIES
+	SURFACE_MASTER_SPECIES
+	SURFACE_SPECIES
+	RATES
+	END
+------------------------------------
+Reading input data for simulation 1.
+------------------------------------
+
+	﻿pH,EC µS/cm,NTU,Ca mg/l,NH4 mg/l,NO3 mg/l,Cl mg/l,K mg/l,FC (cfu/100ml),Mg,Na,HCO3,SO4,TDS,CO3
+WARNING: Unknown input, no keyword has been specified.
+	6.76,47.67,18.8,0.87,1,0.1,1.77,1,43,19.9,5.33,54.34,12.1,23.83333333,0
+WARNING: Unknown input, no keyword has been specified.
+	6.41,42.33,18.83,0.77,1,1,1.53,0.67,22,18.07,5.33,52.03,10.5,21.16666667,0
+WARNING: Unknown input, no keyword has been specified.
+	6.74,40.33,20.23,0.7,1,1,1.53,0,53,17.53,5,52.5245604,10.5,20.16666667,0
+WARNING: Unknown input, no keyword has been specified.
+	7.69,39.67,36.77,0.77,1,0.2,1.77,1,83.67,17.63,5,53.9245604,12.2,19.83333333,0
+WARNING: Unknown input, no keyword has been specified.
+	7.3,40,19.93,3.6,0.37,0.23,2.07,1,23.33,20.13,4,55.9895604,13.8,20,0
+WARNING: Unknown input, no keyword has been specified.
+	7.26,43.33,23.47,1.33,1,0.2,1.8,1,78,14.3,4.33,50.9895604,10.8,21.66666667,0
+WARNING: Unknown input, no keyword has been specified.
+	6.97,44.67,19.77,0,0.9,0.3,0.57,1,11.67,14.87,3,8.764666667,48.3,22.33333333,0
+WARNING: Unknown input, no keyword has been specified.
+	6.89,32.77,23.63,0,1.33,1,0.37,1,17,26.33,3.67,6.351,40.43333333,16.38333333,0
+WARNING: Unknown input, no keyword has been specified.
+	6.96,34.57,20.4,0.1,1.2,1,0.37,1.03,0,21.43,2,7.499333333,40.38,17.28333333,0
+WARNING: Unknown input, no keyword has been specified.
+	6.98,46.33,19.77,0.13,1.23,0.2,0.43,1.13,2,10.6,4.67,4.623,53.66666667,23.16666667,0
+WARNING: Unknown input, no keyword has been specified.
+	6.76,48.33,19.83,0.17,1.1,0.17,0.3,1.4,7,27.97,3,7.674,26.36666667,24.16666667,0
+WARNING: Unknown input, no keyword has been specified.
+	6.94,40.4,12.4,0.37,1.2,0.2,0.23,1.13,8.33,15.67,2.33,9.683666667,42.3,20.2,0
+WARNING: Unknown input, no keyword has been specified.
+-------------------------------
+End of Run after 0.064 Seconds.
+-------------------------------
+
